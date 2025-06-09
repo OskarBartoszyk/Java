@@ -1,0 +1,6 @@
+2025-06-09 08:19:44.858 [main] INFO  c.project.ProjectRestApiApplication.logStarting(53) - Starting ProjectRestApiApplication using Java 21.0.7 with PID 19297 (/home/oskar/Desktop/project-rest-api/build/classes/java/main started by oskar in /home/oskar/Desktop/project-rest-api)
+2025-06-09 08:19:44.863 [main] INFO  c.project.ProjectRestApiApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 08:19:48.416 [main] INFO  c.project.ProjectRestApiApplication.logStarted(59) - Started ProjectRestApiApplication in 3.94 seconds (process running for 4.169)
+2025-06-09 08:44:58.926 [main] INFO  c.project.ProjectRestApiApplication.logStarting(53) - Starting ProjectRestApiApplication using Java 21.0.7 with PID 33507 (/home/oskar/Desktop/project-rest-api/build/classes/java/main started by oskar in /home/oskar/Desktop/project-rest-api)
+2025-06-09 08:44:58.928 [main] INFO  c.project.ProjectRestApiApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 08:45:02.591 [main] INFO  c.project.ProjectRestApiApplication.logStarted(59) - Started ProjectRestApiApplication in 4.089 seconds (process running for 4.299)

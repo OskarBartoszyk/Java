@@ -1,0 +1,10 @@
+2025-06-09 08:19:53.189 [restartedMain] INFO  com.project.ProjectWebApplication.logStarting(53) - Starting ProjectWebApplication using Java 21.0.7 with PID 19456 (/home/oskar/Desktop/lab3-zpo-oszaleje/project-web-app/build/classes/java/main started by oskar in /home/oskar/Desktop/lab3-zpo-oszaleje)
+2025-06-09 08:19:53.199 [restartedMain] INFO  com.project.ProjectWebApplication.logStartupProfileInfo(652) - No active profile set, falling back to 1 default profile: "default"
+2025-06-09 08:19:54.740 [restartedMain] INFO  com.project.ProjectWebApplication.logStarted(59) - Started ProjectWebApplication in 1.924 seconds (process running for 2.183)
+2025-06-09 08:20:06.361 [http-nio-8081-exec-9] INFO  c.project.service.ProjektServiceImpl.getProjekty(96) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2025-06-09 08:20:46.803 [http-nio-8081-exec-1] INFO  c.project.service.ProjektServiceImpl.getProjekty(96) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2025-06-09 08:21:04.731 [http-nio-8081-exec-8] INFO  c.project.service.ProjektServiceImpl.getProjekty(96) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2025-06-09 08:35:17.865 [http-nio-8081-exec-4] INFO  c.project.service.ProjektServiceImpl.setProjekt(67) - REQUEST -> POST /api/projekty
+2025-06-09 08:45:49.157 [http-nio-8081-exec-4] INFO  c.project.service.ProjektServiceImpl.getProjekty(96) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2025-06-09 08:46:09.700 [http-nio-8081-exec-9] INFO  c.project.service.ProjektServiceImpl.getProjekty(96) - REQUEST -> GET /api/projekty?page=0&size=20&sort=
+2025-06-09 08:46:20.266 [http-nio-8081-exec-2] INFO  c.project.service.ProjektServiceImpl.setProjekt(67) - REQUEST -> POST /api/projekty
