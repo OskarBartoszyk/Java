@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/edit-style.css}" rel="stylesheet" />
+    <title>Edytuj Projekt</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <h1 th:if="${projekt.projektId != null}">Edytuj Projekt</h1>
+            <h1 th:if="${projekt.projektId == null}">Nowy Projekt</h1>
+        </div>
+
+        <div class="content">
+            <form th:action="@{/projektEdit}" th:object="${projekt}" method="post">
+                <div>
+                    <label for="nazwa">Nazwa:</label>
+                    <input type="text" id="nazwa" name="nazwa" th:field="*{nazwa}" required />
+                </div>
+                <div>
+                    <label for="dataOddania">Data oddania:</label>
+                    <input type="date" id="dataOddania" name="dataOddania" th:field="*{dataOddania}" />
+                </div>
+                <div>
+                    <label for="opis">Opis:</label>
+                    <textarea id="opis" name="opis" th:field="*{opis}"></textarea>
+                </div>
+                <div class="actions">
+                    <button type="submit">Zapisz</button>
+                    <button type="submit" name="cancel">Anuluj</button>
+                    <button type="submit" name="delete" th:if="${projekt.projektId != null}">Usuń</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

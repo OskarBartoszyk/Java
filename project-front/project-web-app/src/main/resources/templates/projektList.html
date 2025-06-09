@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/list-style.css}" rel="stylesheet" />
+    <title>Lista projektów</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <h1>Lista projektów</h1>
+            <a class="btn" th:href="@{/projektEdit}">Nowy projekt</a>
+        </div>
+        
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nazwa</th>
+                        <th>Data oddania</th>
+                        <th>Utworzony</th>
+                        <th>Zmodyfikowany</th>
+                        <th>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="projekt : ${projekty}">
+                        <td th:text="${projekt.projektId}">1</td>
+                        <td th:text="${projekt.nazwa}">Nazwa projektu</td>
+                        <td th:text="${projekt.dataOddania}">2024-01-01</td>
+                        <td th:text="${projekt.dataCzasUtworzenia}">2024-01-01 12:00</td>
+                        <td th:text="${projekt.dataCzasModyfikacji}">2024-01-01 12:00</td>
+                        <td class="actions">
+                            <a class="btn edit" th:href="@{/projektEdit(projektId=${projekt.projektId})}">Edytuj</a>
+                            <a class="btn delete" th:href="@{/projektEdit(projektId=${projekt.projektId},delete=true)}">Usuń</a>
+                        </td>
+                    </tr>
+                    <tr th:if="${#lists.isEmpty(projekty)}">
+                        <td colspan="6" class="no-data">Brak projektów</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
